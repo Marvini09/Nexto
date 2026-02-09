@@ -1,0 +1,206 @@
+:root{
+  --bg:#070c0b;
+  --panel:#0b1412;
+  --soft:#0c1513;
+  --green:#1fdf8b;
+  --glow:rgba(31,223,139,.35);
+  --text:#e6f1ed;
+  --muted:#9fb3ad;
+  --line:rgba(255,255,255,.06);
+  --warn:#ffc107;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Inter",system-ui,Arial,sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(31,223,139,.14), transparent 45%),
+    var(--bg);
+  color:var(--text);
+}
+
+.container{max-width:1200px;margin:auto;padding:0 24px}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+.header{
+  position:sticky;top:0;z-index:20;
+  background:rgba(7,12,11,.75);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-content{
+  height:72px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{font-weight:800;color:var(--green)}
+.logo span{color:var(--text)}
+
+.back-home{
+  display:flex;align-items:center;gap:10px;
+  color:var(--muted);
+}
+.back-icon{
+  width:28px;height:28px;border-radius:8px;
+  display:grid;place-items:center;
+  background:rgba(31,223,139,.08);
+  color:var(--green);font-weight:800;
+}
+
+.btn-outline{
+  padding:10px 16px;border-radius:10px;
+  border:1px solid var(--green);
+  color:var(--green);font-weight:700;
+}
+.btn-primary{
+  padding:14px 22px;border-radius:12px;
+  background:linear-gradient(180deg,#2cffab,var(--green));
+  color:#00130b;font-weight:800;
+  box-shadow:0 0 26px var(--glow);
+}
+
+/* HERO */
+.hero{padding:90px 0}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:40px;
+}
+.badge{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:999px;
+  background:rgba(31,223,139,.08);
+  border:1px solid rgba(31,223,139,.18);
+  color:var(--green);
+  font-weight:800;
+  margin-bottom:18px;
+}
+.hero-text h1{
+  font-size:42px;
+  line-height:1.2;
+  margin-bottom:16px;
+}
+.hero-text p{
+  color:var(--muted);
+  margin-bottom:22px;
+}
+
+.alert{
+  background:rgba(255,193,7,.08);
+  border:1px solid rgba(255,193,7,.3);
+  border-radius:16px;
+  padding:16px;
+  margin-bottom:24px;
+}
+.alert strong{display:block;margin-bottom:6px}
+
+.hero-panel{
+  background:linear-gradient(180deg, rgba(31,223,139,.08), transparent), var(--panel);
+  border:1px solid rgba(31,223,139,.18);
+  border-radius:22px;
+  padding:26px;
+}
+.hero-panel ul{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.hero-panel li{
+  color:var(--muted);
+  padding-left:16px;
+  position:relative;
+}
+.hero-panel li::before{
+  content:"";
+  width:8px;height:8px;border-radius:50%;
+  background:var(--green);
+  position:absolute;left:0;top:6px;
+}
+
+/* FORM */
+.form-section{
+  padding:90px 0;
+  background:linear-gradient(180deg, transparent, var(--soft));
+  border-top:1px solid var(--line);
+}
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:32px;
+}
+.form-info h2{margin-bottom:10px}
+.form-info p{color:var(--muted);margin-bottom:18px}
+
+.tips ul{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.tips li{color:var(--muted)}
+
+.form-card{
+  background:var(--panel);
+  border:1px solid rgba(31,223,139,.18);
+  border-radius:22px;
+  padding:28px;
+}
+
+.field{margin-bottom:14px}
+.field label{
+  display:block;
+  margin-bottom:6px;
+  font-size:14px;
+}
+.field span{color:var(--warn)}
+.field input,
+.field textarea{
+  width:100%;
+  padding:14px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(0,0,0,.25);
+  color:var(--text);
+}
+
+.warning{
+  background:rgba(255,193,7,.08);
+  border:1px solid rgba(255,193,7,.3);
+  border-radius:14px;
+  padding:14px;
+  margin:16px 0;
+}
+
+.hint{
+  display:block;
+  margin-top:10px;
+  font-size:12px;
+  color:var(--muted);
+}
+
+/* FOOTER */
+.footer{
+  padding:50px 0;
+  border-top:1px solid var(--line);
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+  font-size:14px;
+}
+.footer span{display:block;margin-top:6px;color:var(--muted)}
+
+/* RESPONSIVO */
+@media (max-width:900px){
+  .hero-grid,
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+  .hero-text h1{font-size:32px}
+  .back-text{display:none}
+}

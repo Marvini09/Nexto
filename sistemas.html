@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desenvolvimento de Sistemas | Nexto</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sistemas.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header-content">
+    <a class="back-home" href="index.html" title="Voltar para a Home">
+      <span class="back-icon">←</span>
+      <span class="back-text">Voltar</span>
+    </a>
+
+    <div class="logo">&lt;/&gt; <span>NEXTO</span></div>
+
+    <a class="btn-outline" href="index.html">Home</a>
+  </div>
+</header>
+
+<main class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Desenvolvimento de Sistemas</span>
+
+        <h1>Sistemas e sites desenvolvidos sob medida para o seu negócio</h1>
+
+        <p>
+          Criamos sistemas e sites personalizados, pensados exatamente de acordo
+          com a sua necessidade. Quanto mais detalhes você fornecer, mais preciso
+          será o desenvolvimento da solução.
+        </p>
+
+        <div class="alert">
+          <strong>⚠ Atenção</strong>
+          <span>
+            É muito importante que você descreva <u>detalhadamente</u> como deseja
+            seu site ou sistema. Informações incompletas podem impactar no prazo,
+            no orçamento e no resultado final.
+          </span>
+        </div>
+
+        <a href="#formulario" class="btn-primary">Descrever meu projeto</a>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel-title">O que podemos desenvolver</div>
+        <ul>
+          <li>Sistemas web personalizados</li>
+          <li>Sites institucionais e corporativos</li>
+          <li>Painéis administrativos</li>
+          <li>Sistemas internos e automações</li>
+          <li>Plataformas sob demanda</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section" id="formulario">
+    <div class="container form-grid">
+
+      <div class="form-info">
+        <h2>Descreva seu projeto com o máximo de detalhes</h2>
+        <p>
+          Utilize o campo ao lado para explicar exatamente como você imagina o seu
+          site ou sistema.
+        </p>
+
+        <div class="tips">
+          <h3>Dicas para uma boa descrição:</h3>
+          <ul>
+            <li>Qual o objetivo do sistema ou site?</li>
+            <li>Quais funcionalidades ele deve ter?</li>
+            <li>Quem vai utilizar o sistema?</li>
+            <li>Há exemplos de sites/sistemas parecidos?</li>
+            <li>Precisa de login, cadastro, relatórios ou painel?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <form action="#" method="post" onsubmit="return false;">
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Seu nome completo">
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="seuemail@exemplo.com">
+          </div>
+
+          <div class="field">
+            <label for="descricao">
+              Descrição detalhada do site ou sistema <span>*</span>
+            </label>
+            <textarea
+              id="descricao"
+              placeholder="Explique detalhadamente como você deseja o site ou sistema, todas as funcionalidades, regras, telas, ideias e observações importantes..."
+              rows="10"></textarea>
+          </div>
+
+          <div class="warning">
+            <strong>Importante:</strong>
+            Quanto mais detalhada for a descrição, mais preciso será o orçamento
+            e o desenvolvimento do projeto.
+          </div>
+
+          <button class="btn-primary" type="submit">
+            Enviar descrição do projeto
+          </button>
+
+          <small class="hint">
+            * Este formulário é demonstrativo. A integração será realizada futuramente.
+          </small>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>&lt;/&gt; NEXTO</strong>
+      <span>© 2024 Nexto. Todos os direitos reservados.</span>
+    </div>
+
+    <div>
+      <strong>Endereço</strong>
+      <span>Rua Exemplo, 123<br>Cidade - Estado</span>
+    </div>
+
+    <div>
+      <strong>Contato</strong>
+      <span>contato@nexto.com</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

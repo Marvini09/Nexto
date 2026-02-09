@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peças e Equipamentos | Nexto</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pecas.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <a class="back-home" href="index.html" aria-label="Voltar para a Home" title="Voltar para a Home">
+        <span class="back-icon" aria-hidden="true">←</span>
+        <span class="back-text">Voltar</span>
+      </a>
+
+      <div class="logo">&lt;/&gt; <span>NEXTO</span></div>
+
+      <a class="btn-outline" href="index.html">Home</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <div class="badge">Peças & Equipamentos</div>
+
+          <h1>Venda de peças e equipamentos tecnológicos</h1>
+          <p>
+            Em breve você poderá comprar componentes, peças e equipamentos diretamente por aqui,
+            com catálogo, carrinho e pagamento integrado.
+          </p>
+
+          <div class="notice" role="status">
+            <div class="notice-icon" aria-hidden="true">⚠</div>
+            <div class="notice-content">
+              <strong>Funcionalidade em desenvolvimento</strong>
+              <span>
+                No momento, esta página é apenas informativa. A área de vendas será integrada futuramente.
+              </span>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a class="btn-primary" href="index.html">Voltar para a Home</a>
+            <a class="btn-ghost" href="#contato">Avisar quando estiver pronto</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-hidden="true">
+          <div class="panel-glow"></div>
+          <div class="panel-box">
+            <div class="panel-title">Loja em breve</div>
+
+            <div class="panel-list">
+              <div class="panel-item">
+                <span class="dot"></span>
+                <span>Catálogo de produtos</span>
+              </div>
+              <div class="panel-item">
+                <span class="dot"></span>
+                <span>Carrinho e checkout</span>
+              </div>
+              <div class="panel-item">
+                <span class="dot"></span>
+                <span>Frete e rastreio</span>
+              </div>
+              <div class="panel-item">
+                <span class="dot"></span>
+                <span>Pagamentos online</span>
+              </div>
+            </div>
+
+            <div class="panel-foot">
+              <span class="status-pill">Status: Planejamento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info" id="contato">
+      <div class="container info-grid">
+        <div class="info-card">
+          <h2>Quer ser avisado quando a loja abrir?</h2>
+          <p>
+            Deixe seu contato e nós avisamos assim que o catálogo estiver disponível.
+            (Pode integrar com PHP/Mail/WhatsApp depois.)
+          </p>
+
+          <form class="form" action="#" method="post" onsubmit="return false;">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" type="text" placeholder="Seu nome" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="seuemail@exemplo.com" />
+            </div>
+
+            <button class="btn-primary" type="submit">Quero ser avisado</button>
+            <small class="hint">* Formulário demonstrativo (integração será feita futuramente).</small>
+          </form>
+        </div>
+
+        <div class="info-card secondary">
+          <h3>Enquanto isso…</h3>
+          <p>
+            Se você precisa de peças/equipamentos agora, podemos atender via orçamento.
+          </p>
+
+          <div class="contact-box">
+            <div class="contact-item">
+              <span class="label">Email</span>
+              <span class="value">contato@nexto.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="label">WhatsApp</span>
+              <span class="value">(00) 00000-0000</span>
+            </div>
+          </div>
+
+          <a class="btn-outline full" href="index.html">Voltar para a Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>&lt;/&gt; NEXTO</strong>
+        <span>© 2024 Nexto. Todos os direitos reservados.</span>
+      </div>
+
+      <div>
+        <strong>Endereço</strong>
+        <span>Rua Exemplo, 123<br>Cidade - Estado</span>
+      </div>
+
+      <div>
+        <strong>Contato</strong>
+        <span>contato@nexto.com</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
